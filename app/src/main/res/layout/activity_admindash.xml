@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admindash">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/adminout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="656dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="TODO"
+        android:src="@drawable/logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/cmpview"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:neumorph_backgroundColor="@color/background"
+        app:neumorph_shadowColorDark="@color/dark_shadow"
+        app:neumorph_shadowColorLight="@color/light_shadow"
+        app:neumorph_shadowElevation="@dimen/_5sdp"
+        app:neumorph_shapeAppearance="@style/NeumorphismCard">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/gform"
+                app:tint="@color/primary" />
+
+            <TextView
+                android:id="@+id/form1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Complaint"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
